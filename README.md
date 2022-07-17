@@ -1,5 +1,5 @@
 # VRMaze_SimpleProject
-Project that enables Unity MonoBehaviour interaction with InMind-VR framework
+Project that enables Unity MonoBehaviour handling with InMind-VR framework interaction system
 
 This Visual Studio project only requires HumanVirtualMaze_Core.dll and UnityEngine.dll to compile. These dll is available and up to date inside VRMaze software installation folder.
 
