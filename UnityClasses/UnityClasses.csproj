@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HumanVirtualMaze_Core">
-      <HintPath>..\..\Binaries\HumanMazeProtocolDesigner\Release\HumanVirtualMaze_Core.dll</HintPath>
+      <HintPath>..\..\..\Binaries\HumanMazeProtocolDesigner\Release\HumanVirtualMaze_Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,12 +43,13 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\Binaries\HumanMazeProtocolDesigner\Release\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\Binaries\HumanMazeProtocolDesigner\Release\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Behaviours\ChangeColorBehaviourExample.cs" />
     <Compile Include="Behaviours\InteractionBehaviourExample.cs" />
+    <Compile Include="Behaviours\OnTriggerEnterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

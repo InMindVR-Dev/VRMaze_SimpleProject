@@ -24,6 +24,12 @@ namespace UnityClasses
                 Debug.Log("We click on it ! " + this.gameObject.name);
         }
 
+        public void OnAction(int buttonIndex)
+        {
+            for (int i = 0; i < TotalCount; i++)
+                Debug.Log("We click on it ! " + this.gameObject.name + " Button index : " + buttonIndex );
+        }
+
         //Cette fonction est exectuée lorsque l'utilisateur survole l'objet avec son pointeur.
         //Cette fonction peut etre laissée vide si besoin.
         public virtual void OnEnter() // N'est jamais sollicité !!! voir pkoi !
