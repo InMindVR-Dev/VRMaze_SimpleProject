@@ -24,6 +24,9 @@ namespace UnityClasses
                 Debug.Log("We click on it ! " + this.gameObject.name);
         }
 
+        //Cette fonction est exectuée lorsque l'utilisateur clique avec n'importe quel bouton sur l'objet qui dispose de ce script.
+        //Cette fonction peut etre laissée vide si besoin. 
+        //L'adresse du bouton est affectée a buttonIndex, ce qui permet de dissocier les actions.
         public void OnAction(int buttonIndex)
         {
             for (int i = 0; i < TotalCount; i++)
