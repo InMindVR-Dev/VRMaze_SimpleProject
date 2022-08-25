@@ -41,7 +41,7 @@ namespace UnityClasses
                 Debug.Log("We entered it ! " + this.gameObject.name);
         }
 
-        //Cette fonction est exectuée lorsque l'utilisateur clique sur l'objet qui dispose de ce script.
+        //Cette fonction est exectuée lorsque l'utilisateur sort de l'objet qui dispose de ce script.
         //Cette fonction peut etre laissée vide si besoin.
         public virtual void OnExit()
         {
@@ -49,7 +49,7 @@ namespace UnityClasses
                 Debug.Log("We exited it ! " + this.gameObject.name);
         }
 
-        //Cette fonction est exectuée lorsque l'utilisateur ne survole plus l'objet avec son pointeur.
+        //Cette fonction est exectuée lorsque l'utilisateur survole l'objet avec son pointeur.
         //Cette fonction peut etre laissée vide   
         public virtual void OnOver()
         {

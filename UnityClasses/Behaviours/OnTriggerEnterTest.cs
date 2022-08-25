@@ -9,7 +9,7 @@ namespace UnityClasses
 {
 
     //Exemple de classe utilisant la methode OnTriggerEnter.
-    //Dans VRmaze, il est possible d'ajouter une collision à n'importe quel objet de manière a pouvoir detecter son entrée dans une zone.
+    //Dans VRmaze, il est possible d'ajouter une collision à n'importe quel objet de manière à pouvoir detecter son entrée dans une zone.
     public class OnTriggerEnterTest : MonoBehaviour
     {
         void OnTriggerEnter(Collider other)
