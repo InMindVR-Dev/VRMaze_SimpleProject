@@ -1,4 +1,5 @@
 ﻿using HumanVirtualMaze.Behaviours;
+using HumanVirtualMaze.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,16 +7,68 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
+
 namespace UnityClasses
 {
     //Exemple de classe permettant d'obtenir les informations de pointage.
+    //A partir de la version 2021.8.7.0000 il peut y avoir plusieurs système de pointage en même temps (ex. Deux manettes VR etc.)
+
     public class GetPointingDataBehaviourExample : MonoBehaviour
     {
+        //2021.8.7.0000 and above
+
+        // LiveEventManagerDirectAccess.Singleton donne accès aux informations calculées par le gestionnaire l'évenements de vrmaze. Les informations sont mises à jour automatiquement a chaque frame.
+        
+
+        void Update()
+        {
+            LogRays();
+            LogHits();
+            LogObjects();
+
+        }
+
+        public void LogRays()
+        {
+            Debug.Log("Rays launched :" + LiveEventManagerDirectAccess.Singleton.Rays.Count);
+            foreach (var item in LiveEventManagerDirectAccess.Singleton.Rays) 
+                Debug.Log("Ray data:" + item.origin.ToString() + " " + item.direction);            
+        }
+
+        public void LogObjects()
+        {
+            Debug.Log("Objects hit :" + LiveEventManagerDirectAccess.Singleton.Objects.Count);
+            foreach (var item in LiveEventManagerDirectAccess.Singleton.Objects)
+                Debug.Log("Object info:" + item.name);
+        }
+
+        public void LogHits()
+        {
+            Debug.Log("Hits count :" + LiveEventManagerDirectAccess.Singleton.Hits.Count);
+            foreach (var item in LiveEventManagerDirectAccess.Singleton.Hits)
+                Debug.Log("Hit info:" + item.point.ToString());
+        }
+
+        //Méthode permettant d'afficher quelques informations.
+        void OnGUI()
+        {
+            for(int i =0;i<LiveEventManagerDirectAccess.Singleton.Hits.Count;i++)
+                GUI.Label(new Rect(0, i*50, 500, 50), "We hit something : " + LiveEventManagerDirectAccess.Singleton.Hits[i].point);
+
+        }
+
+
+
+        //2021.8.6.xxxx and below
+
+        /* 
+
         //Le mouseEventManagerBehaviour provient de HumanVirtualMaze_core.dll
         public MouseEventManagerBehaviour PointingManager { get; set; }
+
         void Start() {
             PointingManager = null;
-        
+
         }
 
         void Update() {
@@ -25,7 +78,7 @@ namespace UnityClasses
             {
                 Process();
             }
-        
+
         }
 
         public virtual void Process()
@@ -81,7 +134,7 @@ namespace UnityClasses
             GUI.Label(new Rect(0, 0, 500, 50), "We hit something : " + PointingManager.Hit.Value.point);
 
         }
-
-
+      */
     }
 }
+  

@@ -7,10 +7,10 @@ using UnityEngine;
 
 namespace UnityClasses
 {
+	
 	//Exemple de script qui permet le changement de couleur d'un objet lorsqu'on pointe dessus.
    public  class ChangeColorBehaviourExample : InteractionBehaviourExample
     {
-
 		public Color original, onOver, onClick;
 
 		void Start()
@@ -25,7 +25,6 @@ namespace UnityClasses
 
 		public override void OnExit()
 		{
-
 			this.GetComponent<MeshRenderer>().material.color = original;
 		}
 
@@ -33,6 +32,5 @@ namespace UnityClasses
 		{
 			this.GetComponent<MeshRenderer>().material.color = onClick;
 		}
-
-	}
+	}	
 }

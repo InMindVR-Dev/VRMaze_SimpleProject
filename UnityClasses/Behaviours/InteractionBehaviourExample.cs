@@ -63,15 +63,11 @@ namespace UnityClasses
         {
             for (int i = 0; i < TotalCount; i++)
                 Debug.Log("Starting my Behaviour");
-
         }
 
         //Method Update de Unity, on fait ce que l'on veut ici
         void Update()
         {
         }
-
-
-
     }
 }
