@@ -30,29 +30,29 @@ namespace UnityClasses
 
         public void LogRays()
         {
-            Debug.Log("Rays launched :" + LiveEventManagerDirectAccess.Singleton.Rays.Count);
-            foreach (var item in LiveEventManagerDirectAccess.Singleton.Rays) 
+            Debug.Log("Rays launched :" + LiveData.EventManager.Rays.Count);
+            foreach (var item in LiveData.EventManager.Rays) 
                 Debug.Log("Ray data:" + item.origin.ToString() + " " + item.direction);            
         }
 
         public void LogObjects()
         {
-            Debug.Log("Objects hit :" + LiveEventManagerDirectAccess.Singleton.Objects.Count);
-            foreach (var item in LiveEventManagerDirectAccess.Singleton.Objects)
+            Debug.Log("Objects hit :" + LiveData.EventManager.Objects.Count);
+            foreach (var item in LiveData.EventManager.Objects)
                 Debug.Log("Object info:" + item.name);
         }
 
         public void LogHits()
         {
-            Debug.Log("Hits count :" + LiveEventManagerDirectAccess.Singleton.Hits.Count);
-            foreach (var item in LiveEventManagerDirectAccess.Singleton.Hits)
+            Debug.Log("Hits count :" + LiveData.EventManager.Hits.Count);
+            foreach (var item in LiveData.EventManager.Hits)
                 Debug.Log("Hit info:" + item.point.ToString());
         }
 
         //Méthode permettant d'afficher quelques informations.
         void OnGUI()
         {
-            for(int i =0;i<LiveEventManagerDirectAccess.Singleton.Hits.Count;i++)
+            for(int i =0;i< LiveData.EventManager.Hits.Count;i++)
                 GUI.Label(new Rect(0, i*50, 500, 50), "We hit something : " + LiveEventManagerDirectAccess.Singleton.Hits[i].point);
 
         }
