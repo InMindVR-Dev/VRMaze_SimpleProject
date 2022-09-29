@@ -52,6 +52,7 @@
     <Compile Include="Behaviours\GetPointingDataBehaviourExample.cs" />
     <Compile Include="Behaviours\InteractionBehaviourExample.cs" />
     <Compile Include="Behaviours\OnTriggerEnterTest.cs" />
+    <Compile Include="Behaviours\VRmazeTimerDisplayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
