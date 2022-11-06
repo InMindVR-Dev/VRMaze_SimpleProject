@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HumanVirtualMaze_Model">
-      <HintPath>..\..\Binaries\HumanMaze\HumanVirtualMaze_Model.dll</HintPath>
+      <HintPath>..\..\..\Binaries\HumanMaze\HumanVirtualMaze_Model.dll</HintPath>
     </Reference>
     <Reference Include="HumanVirtualMaze_ViewModel">
-      <HintPath>..\..\Binaries\HumanMazeGuiCore\HumanVirtualMaze_ViewModel.dll</HintPath>
+      <HintPath>..\..\..\Binaries\HumanMazeGuiCore\HumanVirtualMaze_ViewModel.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -68,9 +68,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
