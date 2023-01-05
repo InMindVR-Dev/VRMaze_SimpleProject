@@ -1,4 +1,4 @@
-﻿using HumanVirtualMaze.Model;
+﻿using HumanVirtualMaze.Core;
 using UnityEngine;
 
 namespace UnityClasses

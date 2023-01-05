@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HumanVirtualMaze.Plugin;
+using HumanVirtualMaze.UI.Managers;
+using System;
 using System.Windows;
 
 namespace HumanVirtualMaze.ViewModel

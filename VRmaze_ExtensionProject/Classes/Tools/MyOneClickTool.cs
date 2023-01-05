@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HumanVirtualMaze.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using UnityEngine;
 
-namespace HumanVirtualMaze.Model
+namespace HumanVirtualMaze.Model.Tools
 {
 
 
@@ -48,35 +49,6 @@ namespace HumanVirtualMaze.Model
 
         }
 
-        //Here is an example using unity embed screen capture function
-        /*       
-
-         //This method is called only using Uniity Viewer, so it can use any Unity commands !
-        public override void ProcessTool()
-        {
-            Console.WriteLine("Creating screenshot from current view");
-
-            if (!Directory.Exists(StaticFunctions.GetVRmazePersonnalFolder() + "/ScreenShots/"))
-            {
-                Directory.CreateDirectory(StaticFunctions.GetVRmazePersonnalFolder() + "/ScreenShots/");
-            }
-
-            string endFilename = DateTime.Now.ToString("yyyy_MM_dd_hh_mm_ss") + ".png";
-            ScreenCapture.CaptureScreenshot(StaticFunctions.GetVRmazePersonnalFolder() + "/ScreenShots/" + endFilename);
-            GetToolsGroupParent().UpdatePanelInfoText("ScreenShot : " + endFilename, false);
-
-            State = ToolState.Finished;
-
-        }
-
-
-
-        */
-
-
-
-
-
-
+      
     }
 }

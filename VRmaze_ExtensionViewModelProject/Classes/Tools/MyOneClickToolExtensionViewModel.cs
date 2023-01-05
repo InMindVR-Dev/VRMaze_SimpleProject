@@ -1,17 +1,14 @@
-﻿using HumanVirtualMaze.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HumanVirtualMaze.Model.Tools;
+using HumanVirtualMaze.UI.Managers;
+using HumanVirtualMaze.ViewModel.Attributes;
 
-namespace HumanVirtualMaze.ViewModel
+namespace HumanVirtualMaze.ViewModel.Tools
 {
 
 
     //This class is an extension of MyOneClickToolViewModel
-	//The BaseClassView Attribute on a ViewModel class allo to merge UI component with the parent Component and so on
-	[BaseClassView(MergeWithParent =true)]
+    //The BaseClassView Attribute on a ViewModel class allo to merge UI component with the parent Component and so on
+    [BaseClassView(MergeWithParent =true)]
     public class MyOneClickToolExtensionViewModel : MyOneClickToolViewModel
     {
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HumanVirtualMaze.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using UnityEngine;
 
-namespace HumanVirtualMaze.Model
+namespace HumanVirtualMaze.Model.Tools
 {
     [XmlRoot("Tool")]
     public class MyOneClickToolExtension : MyOneClickTool

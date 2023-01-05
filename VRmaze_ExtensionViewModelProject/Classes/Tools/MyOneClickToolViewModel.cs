@@ -1,15 +1,10 @@
-﻿using HumanVirtualMaze.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HumanVirtualMaze.Model.Tools;
 
 
 //Warning, here we wait for the default namespace HumanVirtualMaze.ViewModel
 //This project and all its classes are only loaded in VRmaze Designer UI, not inside Unity Viewer.
 
-namespace HumanVirtualMaze.ViewModel
+namespace HumanVirtualMaze.ViewModel.Tools
 {
 
 
