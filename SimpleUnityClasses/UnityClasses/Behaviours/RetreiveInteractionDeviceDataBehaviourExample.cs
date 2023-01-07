@@ -17,8 +17,12 @@ namespace UnityClasses
             Console.WriteLine("Retreiving Interaction devices Data !");
             foreach (var item in LiveData.EventManager.InteractionData)
             {
-                //We can get Vector3 values (containing verctor2 sometimes)
+                
 
+                Console.WriteLine(item.Identifier);
+
+
+                //We can get Vector3 values (containing verctor2 sometimes)
                 foreach (var axe in item.Axes)
                 {
                     Console.WriteLine("Axis value : " + axe.ToString());
