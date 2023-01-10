@@ -1,16 +1,10 @@
 ﻿using HumanVirtualMaze.Enums;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 using UnityEngine;
 
 namespace HumanVirtualMaze.Model.Tools
 {
-
-
     /// <summary>
     /// This simple class create a new tool that run ProcessTool() method on click.
     /// ProcessTool() method can use any Unity calls
@@ -21,7 +15,6 @@ namespace HumanVirtualMaze.Model.Tools
     [XmlRoot("Tool")]
     public class MyOneClickTool : SimpleButtonTool
     {
-
         //ctor is used by VRmaze Designer UI, so it can't handle any Unity Calls
         public MyOneClickTool() : base()
         {
@@ -30,8 +23,6 @@ namespace HumanVirtualMaze.Model.Tools
             ToolTip = "My One click tool Tooltip";
             SourceImage = "Tool_screenshot.png";
         }
-
-
 
         //This method is called only using Uniity Viewer, so it can use any Unity commands !
         public override void ProcessTool()
@@ -46,9 +37,6 @@ namespace HumanVirtualMaze.Model.Tools
             //Tool process is finished so we must put its state to ToolState.Finished.
             //If not, ProcessTool() will be called next frame and next while State!=ToolState.Finished
             State = ToolState.Finished;
-
-        }
-
-      
+        }      
     }
 }

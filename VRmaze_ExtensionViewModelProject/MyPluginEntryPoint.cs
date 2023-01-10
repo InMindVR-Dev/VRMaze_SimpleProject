@@ -7,12 +7,9 @@ namespace HumanVirtualMaze.ViewModel
 {
     public class MyPluginEntryPoint : IPlugin
     {
-
-
         public MyPluginEntryPoint()
         {
             Console.WriteLine("Creating new Plugin management node for My Plugin");
-
         }
 
         public void AddDataResourceDictionnary()
@@ -22,13 +19,8 @@ namespace HumanVirtualMaze.ViewModel
             {
 
                 Source = new Uri(@"pack://application:,,,/VRmazeClasses_ViewModel;component/ResourceDictionary.xaml", UriKind.RelativeOrAbsolute)
-            };
-
-
-          
-            ResourceDictionaryManager.GetResourceDictonary().MergedDictionaries.Add(Dictionary);
-          
-
+            };          
+            ResourceDictionaryManager.GetResourceDictonary().MergedDictionaries.Add(Dictionary);   
         }
     }
 }

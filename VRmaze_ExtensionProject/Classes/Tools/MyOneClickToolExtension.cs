@@ -12,8 +12,6 @@ namespace HumanVirtualMaze.Model.Tools
     [XmlRoot("Tool")]
     public class MyOneClickToolExtension : MyOneClickTool
     {
-
-
         //Let's imagine we need some properties that we want to be savec in our Xml file...
         //We add an XmlAttribute attribute on any property (and property only)
         [XmlAttribute]
@@ -22,7 +20,6 @@ namespace HumanVirtualMaze.Model.Tools
         //Let's use a bool value too
         [XmlAttribute]
         public bool MyBoolValue { get; set; }
-
 
         //Let's use another property, but this time, we do not want to save it
         //We just add a XmlIgnore attribute on this property
@@ -42,8 +39,6 @@ namespace HumanVirtualMaze.Model.Tools
             MyIntValue = 5;
             MyBoolValue = true;
             CallCount = 0;
-
-            
         }
 
         public override void ProcessTool()
@@ -55,12 +50,12 @@ namespace HumanVirtualMaze.Model.Tools
                 Console.WriteLine("Creating a new GameObject List");
                 MyGameObjects = new List<GameObject>();
             }
-                                  
-                for (int i = 0; i < MyGameObjects.Count; i++)
-                {
-                    GameObject.Destroy(MyGameObjects[i]);
-                }
-                MyGameObjects.Clear();
+
+            for (int i = 0; i < MyGameObjects.Count; i++)
+            {
+                GameObject.Destroy(MyGameObjects[i]);
+            }
+            MyGameObjects.Clear();
 
 
             string info = "";
@@ -75,18 +70,12 @@ namespace HumanVirtualMaze.Model.Tools
                 info += MyBoolValue ? go.name + "\n" : go.name + " " + go.transform.position.ToStringPrecision() + "\n";
             }
 
-            
-
             //Updating Information panel text with erasing any other information texts.
             GetToolsGroupParent().UpdatePanelInfoText(info, true);
 
             //Tool process is finished so we must put its state to ToolState.Finished.
             //If not, ProcessTool() will be called next frame and next while State!=ToolState.Finished
             State = ToolState.Finished;
-
         }
-
-
-
     }
 }

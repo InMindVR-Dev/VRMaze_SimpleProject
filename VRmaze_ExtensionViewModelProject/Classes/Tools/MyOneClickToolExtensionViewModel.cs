@@ -4,24 +4,17 @@ using HumanVirtualMaze.ViewModel.Attributes;
 
 namespace HumanVirtualMaze.ViewModel.Tools
 {
-
-
     //This class is an extension of MyOneClickToolViewModel
     //The BaseClassView Attribute on a ViewModel class allo to merge UI component with the parent Component and so on
     [BaseClassView(MergeWithParent =true)]
     public class MyOneClickToolExtensionViewModel : MyOneClickToolViewModel
     {
-
 		//this time, we do not need to override DisplayedItem method nor GetCategoryMenuName because it is already setup in the parent class.
-
 		//This time we need to declare some property in order to set them inside VRmaze
-
 
 		// Property declaration
 		// In order to manipulate custom properties in VRmaze UI, we need to declare the same properties with the same names as the mmodel class
 		// We can't use directly Model class because Unity can't Handle MVVM pattern with extensive use of OnPropertyChanged calls.
-
-
 
 		//We declare an int to match MyIntValue form model Class
 		//We add an IntegerView Attribute in order to handle UI process
@@ -84,7 +77,5 @@ namespace HumanVirtualMaze.ViewModel.Tools
 		}
 
 		public MyOneClickToolExtensionViewModel(MyOneClickToolExtension my) : base(my) { }
-
-
     }
 }

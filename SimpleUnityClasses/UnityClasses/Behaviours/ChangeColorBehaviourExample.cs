@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace UnityClasses
-{
-	
+{	
 	//Exemple de script qui permet le changement de couleur d'un objet lorsqu'on pointe dessus.
    public  class ChangeColorBehaviourExample : InteractionBehaviourExample
     {

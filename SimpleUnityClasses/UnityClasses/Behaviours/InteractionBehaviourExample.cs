@@ -3,11 +3,9 @@ using UnityEngine;
 
 namespace UnityClasses
 {
-
     //IEventListener est une interface dont les méthodes seront appelée par VRmaze losque l'utilisateur pointe sur l'objet parent.
     public class InteractionBehaviourExample : MonoBehaviour, IEventListener
     {
-
         //Exemple d'une variable de classe exposée dans l'éditeur Unity
         public int TotalCount = 1;
 
@@ -53,7 +51,6 @@ namespace UnityClasses
         }
 
         //Method Start de Unity, on fait ce que l'on veut ici
-
         void Start()
         {
             for (int i = 0; i < TotalCount; i++)
