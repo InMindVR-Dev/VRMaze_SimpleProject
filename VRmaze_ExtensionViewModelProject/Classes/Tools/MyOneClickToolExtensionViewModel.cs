@@ -44,7 +44,6 @@ namespace HumanVirtualMaze.ViewModel.Tools
 				int v = value;
 				UndoRedoManager.Push(() => ((MyOneClickToolExtension)this.ObjectID).MyIntValue = v);
 
-
 				//On set will in fact set model property value
 				((MyOneClickToolExtension)this.ObjectID).MyIntValue = value;
 
@@ -66,7 +65,6 @@ namespace HumanVirtualMaze.ViewModel.Tools
 				//These two lines 
 				bool v = value;
 				UndoRedoManager.Push(() => ((MyOneClickToolExtension)this.ObjectID).MyBoolValue = v);
-
 
 				//On set will in fact set model property value
 				((MyOneClickToolExtension)this.ObjectID).MyBoolValue = value;

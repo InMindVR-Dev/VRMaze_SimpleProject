@@ -1,7 +1,6 @@
 ﻿using HumanVirtualMaze.Core;
 using UnityEngine;
 
-
 namespace UnityClasses
 {
     //Exemple de classe permettant d'obtenir les informations de pointage.

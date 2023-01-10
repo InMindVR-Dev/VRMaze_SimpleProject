@@ -5,8 +5,7 @@ using UnityEngine;
 
 namespace HumanVirtualMaze.Model.Tools
 {
-    /// <summary>
-    /// This simple class create a new tool that run ProcessTool() method on click.
+    /// <summary> This simple class create a new tool that run ProcessTool() method on click.
     /// ProcessTool() method can use any Unity calls
     /// ctor and other methods are called as well by VRmaze Designer UI so it can't handle any Unity calls.
     /// To allow node save, we must declare a XmlRoot attribute on the class, and use "Tool" as Xml element name.

@@ -17,7 +17,6 @@ namespace HumanVirtualMaze.ViewModel
             Console.WriteLine("Try to add dictionnary MyCustomPlugin");
             ResourceDictionary Dictionary = new ResourceDictionary
             {
-
                 Source = new Uri(@"pack://application:,,,/VRmazeClasses_ViewModel;component/ResourceDictionary.xaml", UriKind.RelativeOrAbsolute)
             };          
             ResourceDictionaryManager.GetResourceDictonary().MergedDictionaries.Add(Dictionary);   

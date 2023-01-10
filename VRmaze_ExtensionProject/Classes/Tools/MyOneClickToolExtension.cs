@@ -57,7 +57,6 @@ namespace HumanVirtualMaze.Model.Tools
             }
             MyGameObjects.Clear();
 
-
             string info = "";
             for (int i = 0; i < MyIntValue; i++)
             {
